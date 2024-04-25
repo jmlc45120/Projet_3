@@ -1,5 +1,4 @@
-/****** General ***********/
-* {
+{
     font-family: 'Raleway', sans-serif;
 
 }
@@ -150,18 +149,20 @@ input {
 .filtres{
     display: flex;
     flex-direction: row;
-    height:50px;
-    align-items: center;
+}
+.filtres-boutons{
+    margin-left:10px;
 }
 
 .filtres button{
-    height:49px;
+    height:50px;
     margin-left:10px;
-    padding:10px 20px 10px 10px;
+    padding:10px 25px 10px 15px;
     border-radius: 25px;
-    border:4px solid var(--filter-bg-color);
+    border:3px solid var(--filter-bg-color);
     background-color: white;
-    font-size:21px;
+    font-size:15px;
+    font-weight:600;
 }
 .filtres button:hover {
     background-color: aqua;
@@ -179,7 +180,7 @@ input {
     border-radius: 25px 25px 25px 25px;
 }
 .fond_icone_info .fa-solid {
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .info {
@@ -224,39 +225,35 @@ input {
     height:200px;
 }
 .hebergements .card-txt{
-    display:flex;
     flex-direction:column;
-    align-items:flex-start;
-    padding:0px;
     margin:0px;
+    padding-left:5px;
 }
 .hebergements-cards img {/*Photo vignette*/
     width: 100%;
-    height:60%;
-    object-fit:cover;
+    height:120px;
+    /* object-fit:cover; */
     border-radius:20px 20px 0px 0px;
 }
 .hebergements-cards .card-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content:flex-start;
     /* box-sizing: border-box; */
     width: 100%;
-    padding-left: 10px;
-    margin:0px;
 }
 
 .hebergements-cards .card-title {
     margin-top: 10px;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
 }
 
 .hebergements-cards .card-subtitle {
-    margin-bottom: 4px;
+    padding-bottom:0px;
 }
 
 .hebergements-cards .card-rating {
-    margin-bottom:5px;
+    padding:5px;
 }
 
 .afficher-plus {
@@ -363,17 +360,25 @@ footer {
     display:flex;
     flex-direction:row;
     background-color: var(--main-bg-color);
+    margin-top:50px;
+}
+footer ul {
+    list-style-type: none;
+}
+footer li{
+    margin-bottom:20px;
 }
 
 .footer-colonne {
     display: flex;
     flex-direction:column;
     width:30%;
-    height:300px;
+    height:200px;
 }
 .footer-colonne title {
     justify-content: center;
 }
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
