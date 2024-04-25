@@ -362,17 +362,25 @@ footer {
     display:flex;
     flex-direction:row;
     background-color: var(--main-bg-color);
+    margin-top:50px;
+}
+footer ul {
+    list-style-type: none;
+}
+footer li{
+    margin-bottom:30px;
 }
 
 .footer-colonne {
     display: flex;
     flex-direction:column;
     width:30%;
-    height:300px;
+    height:200px;
 }
 .footer-colonne title {
     justify-content: center;
 }
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
