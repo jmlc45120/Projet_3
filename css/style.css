@@ -149,8 +149,6 @@ input {
 .filtres{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    margin-bottom:20px;
 }
 .filtres-boutons{
     margin-left:10px;
