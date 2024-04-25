@@ -79,14 +79,16 @@ section{
 /****** Call To Action ***********/
 }
 
+
 article h2{
     padding-top:45px;
-    padding-bottom:8px;
+    padding-bottom:10px;
+    margin:0px
 }
 
 article p{
     margin:0px;
-    padding:4px 0px 1px 0px;
+    padding:0px 0px 40px 0px;
 }
 
 .call-to-action {
@@ -100,7 +102,7 @@ article p{
 .rechercher {
     display:flex;
     margin:0px;
-    padding-bottom:20px;
+    padding-bottom:40px;
 }
 .rechercher .fond-icone-map{
     display:flex;
