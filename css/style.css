@@ -42,7 +42,7 @@ header a:hover {
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    padding: 0 0px;
     box-sizing: border-box;
 }
 
