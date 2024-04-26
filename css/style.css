@@ -1,7 +1,5 @@
-{
-    font-family: 'Raleway', sans-serif;
 
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --main-color: #0065FC;
@@ -14,14 +12,21 @@
 }
 
 body {
+    font-family:"Raleway";
     display: flex;
     justify-content: center;
 }
 
 header {
+    position:relative;
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 10px;
+    align-items:center;
+    height:60px;
+}
+header nav {
+    position:absolute;
+    right:0px;
+    height:100%;
 }
 
 header img {
@@ -41,7 +46,7 @@ header a:hover {
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 0px;
+    padding: 0 50px;
     box-sizing: border-box;
 }
 
@@ -103,6 +108,7 @@ article p{
     margin:0px;
     padding-bottom:40px;
 }
+
 .rechercher .fond-icone-map{
     display:flex;
     justify-content:center;
@@ -167,8 +173,9 @@ input {
     font-size:15px;
     font-weight:600;
 }
+
 .filtres button:hover {
-    background-color: aqua;
+    background-color: #DEEBFF;
 }
 
 .fond_icone_info {
@@ -182,6 +189,7 @@ input {
     border:2px solid var(--main-bg-color);
     border-radius: 25px 25px 25px 25px;
 }
+
 .fond_icone_info .fa-solid {
     font-size: 12px;
 }
@@ -220,7 +228,7 @@ input {
     justify-content:space-between;
 }
 
-.hebergements-cards .card { /*vignette fond blanc*/
+.hebergements-cards .card {
     display: flex;
     flex-direction:column;
     width:250px;
@@ -232,17 +240,15 @@ input {
     margin:0px;
     padding-left:5px;
 }
-.hebergements-cards img {/*Photo vignette*/
+.hebergements-cards img {
     width: 100%;
     height:120px;
-    /* object-fit:cover; */
     border-radius:20px 20px 0px 0px;
 }
 .hebergements-cards .card-content {
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
-    /* box-sizing: border-box; */
     width: 100%;
 }
 
@@ -260,17 +266,19 @@ input {
 }
 
 .afficher-plus {
-margin-top:15px;;
+    margin-top:15px;
 }
 .afficher-plus button {
     border-width: 0px;
+    font-weight: bold;
     background-color:var(--main-bg-color);
 }
 
 .afficher-plus button:hover{
     background-color:var(--main-bg-color);
-    font-weight: bold;
+    color:blue;
 }
+
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -315,28 +323,31 @@ margin-top:15px;;
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+
 /****** Activités à Marseille ***********/
+
 .activites {
     display:flex;
     flex-direction:column;
     justify-content: space-between;
     margin: 25px;
-    /* box-sizing: border-box; */
 }
+
 .activites-cards{
     display:flex;
     flex-wrap: wrap;
     flex-direction:row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .activites-title {
     margin: 5px;
-    
 }
+
 .activites-cards .card {
     display: flex;
     flex-direction: column;
     margin-top:20px;
+    padding:0px;
     border-radius: 20px 20px 20px 20px;
     width:290px;
     height:440px;
@@ -345,20 +356,24 @@ margin-top:15px;;
 .activites-cards img {
     width: 100%;
     height: 85%;
-    border-radius: 20px 20px 0px 0px;
+    border-radius:20px 20px 0px 0px;
     margin-top:0px;
 }
+
 .activites-cards .card-content {
     display: flex;
     flex-direction: row;
     align-items:center;
     padding-left: 15px;
-    flex-grow:1;
+    flex-grow:0;
 }
+
 .activites-cards .card-title {
     margin-top: 25px;
 }
+
 /****** Début de la section FOOTER ***********/
+
 footer {
     display:flex;
     flex-direction:row;
@@ -366,16 +381,18 @@ footer {
     margin-top:50px;
     width:100%;
 }
+
 footer nav {
     display:flex;
     margin:0px;
     padding:0px;
     width:100%;
-    
 }
+
 footer ul {
     list-style-type: none;
 }
+
 footer li{
     margin-bottom:20px;
 }
@@ -399,11 +416,13 @@ footer li{
         align-items: flex-start;
         height:200px;
     }
+
     .filtres-boutons{
         display: flex;
         margin:0px;
         padding:0px;
     }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -521,6 +540,7 @@ footer li{
     .hebergements-cards .card-subtitle {
         font-size: 13px;
     }
+
     .populaires {
         width: 100%;
         margin-top: 50px;
@@ -543,6 +563,7 @@ footer li{
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
     footer {
         display:flex;
         flex-direction:column;
@@ -550,12 +571,14 @@ footer li{
         margin-top:50px;
         padding:0px;
     }
+
     footer ul {
         list-style-type: none;
         margin:0px;
         padding:0px;
 
     }
+    
     footer li{
         margin:0px 0px 20px 0px;
         padding:0px;
