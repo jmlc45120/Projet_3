@@ -155,6 +155,8 @@ input {
 .filtres{
     display: flex;
     flex-direction: row;
+    height:50px;
+    align-items:baseline;
 }
 .filtres-boutons{
     display: flex;
@@ -216,24 +218,32 @@ input {
 
 /****** Hebergements ***********/
 .hebergements {
+    position:relative;
     width: 65%;
-
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
 }
 .hebergements-title {
+    position:absolute;
+    top:20px;left:20px;
+    display: flex;
     justify-content:left;
+    align-items: center;
 }
 .hebergements-cards{
     display:flex;
     flex-wrap: wrap;
-    justify-content:space-between;
+    justify-content:space-evenly;
+    margin-top:70px;
+    gap:25px;
 }
 
 .hebergements-cards .card {
     display: flex;
     flex-direction:column;
     width:250px;
-    margin:20px 5px 10px 0px;
-    height:200px;
+    height:190px;
 }
 .hebergements .card-txt{
     flex-direction:column;
@@ -242,7 +252,7 @@ input {
 }
 .hebergements-cards img {
     width: 100%;
-    height:120px;
+    height:70%;
     border-radius:20px 20px 0px 0px;
 }
 .hebergements-cards .card-content {
@@ -265,16 +275,13 @@ input {
     padding:5px;
 }
 
-.afficher-plus {
-    margin-top:15px;
-}
-.afficher-plus button {
-    border-width: 0px;
+#afficher-plus {
+    margin-top:10px;
     font-weight: bold;
-    background-color:var(--main-bg-color);
+    width:100px;
 }
 
-.afficher-plus button:hover{
+#afficher-plus:hover{
     background-color:var(--main-bg-color);
     color:blue;
 }
@@ -337,10 +344,10 @@ input {
     display:flex;
     flex-wrap: wrap;
     flex-direction:row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .activites-title {
-    margin: 5px;
+    /* margin: 5px; */
 }
 
 .activites-cards .card {
@@ -349,13 +356,13 @@ input {
     margin-top:20px;
     padding:0px;
     border-radius: 20px 20px 20px 20px;
-    width:290px;
-    height:440px;
+    width:305px;
+    height:455px;
 }
 
 .activites-cards img {
     width: 100%;
-    height: 85%;
+    height: 90%;
     border-radius:20px 20px 0px 0px;
     margin-top:0px;
 }
@@ -369,7 +376,7 @@ input {
 }
 
 .activites-cards .card-title {
-    margin-top: 25px;
+    margin-top:20px;
 }
 
 /****** Début de la section FOOTER ***********/
@@ -378,7 +385,8 @@ footer {
     display:flex;
     flex-direction:row;
     background-color: var(--main-bg-color);
-    margin-top:50px;
+    margin:100px 0px 0px 0px;
+    padding-left:20px;
     width:100%;
 }
 
@@ -391,16 +399,21 @@ footer nav {
 
 footer ul {
     list-style-type: none;
+    padding-left:0px;
 }
 
+footer h3 {
+    margin:25px 0px 0px 0px;
+}
 footer li{
-    margin-bottom:20px;
+    margin:0px 0px 20px 0px;
 }
 
 .footer-paragraphe {
-    display: flex;
+    display:flex;
     flex-direction:column;
-    width:30%;
+    justify-content:flex-start;
+    width:33%;
     height:200px;
 }
 
@@ -430,11 +443,11 @@ footer li{
     .hebergements {
         width: 100%;
     }
-    
+
     .hebergements-cards a {
         flex-wrap:wrap;
         flex-direction: column;
-    
+
     }
 
     .hebergements-cards .card-title {
@@ -486,7 +499,7 @@ footer li{
     header a {
         margin-right:35px;
     }
-    
+
     header a:hover {
         color: var(--main-color);
         border-top:none;
@@ -528,7 +541,7 @@ footer li{
         justify-content:center;
         align-items:center;
     }
-    
+
     .hebergements-cards a {
         width: 100%;
     }
@@ -568,7 +581,7 @@ footer li{
         display:flex;
         flex-direction:column;
         background-color: var(--main-bg-color);
-        margin-top:50px;
+        margin:0px 0px 0px 0px;
         padding:0px;
     }
 
@@ -576,27 +589,21 @@ footer li{
         list-style-type: none;
         margin:0px;
         padding:0px;
+    }
+    
 
-    }
-    
-    footer li{
-        margin:0px 0px 20px 0px;
-        padding:0px;
-    }
-    
-    .footer-colonne {
+    .footer-paragraphe {
         display: flex;
         flex-direction:row;
         justify-content: flex-start;
-        padding: 020px 30px;
         width:100%;
     }
-   
-    .footer-colonne title {
+
+    .footer-paragraphe title {
         justify-content: center;  
     }
 
-    .footer-colonne nav {
+    .footer-paragraphe nav {
         display:flex;
         flex-direction:column;
     }
