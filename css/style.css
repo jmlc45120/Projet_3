@@ -105,6 +105,7 @@ article p{
 
 .rechercher {
     display:flex;
+    align-items:center;
     margin:0px;
     padding-bottom:40px;
 }
@@ -204,7 +205,8 @@ input {
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-bottom:20px;
 }
 
 .hebergements-and-populaires section {
@@ -249,7 +251,7 @@ input {
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
-    width: 100%;
+    width:100%;
 }
 
 .hebergements-cards .card-title {
@@ -263,21 +265,28 @@ input {
 
 .hebergements-cards .card-rating {
     padding:5px;
+    /* height:10px; */
 }
 
 .afficher-plus {
-    margin-top:15px;
+    text-decoration:none;
+    color: #cf1f1f;
 }
-.afficher-plus button {
+.afficher-plus:hover {
+    cursor: pointer; /* Changer le curseur au survol */
+}
+
+/* .afficher-plus button {
     border-width: 0px;
     font-weight: bold;
     background-color:var(--main-bg-color);
-}
 
-.afficher-plus button:hover{
+} */
+
+/* .afficher-plus button:hover{
     background-color:var(--main-bg-color);
     color:blue;
-}
+} */
 
 /****** Populaires ***********/
 .populaires {
@@ -330,7 +339,7 @@ input {
     display:flex;
     flex-direction:column;
     justify-content: space-between;
-    margin: 25px;
+    margin-bottom: 60px;
 }
 
 .activites-cards{
@@ -340,7 +349,7 @@ input {
     justify-content: space-around;
 }
 .activites-title {
-    margin: 5px;
+    margin-left: 20px;
 }
 
 .activites-cards .card {
@@ -349,7 +358,7 @@ input {
     margin-top:20px;
     padding:0px;
     border-radius: 20px 20px 20px 20px;
-    width:290px;
+    width:300px;
     height:440px;
 }
 
@@ -369,7 +378,7 @@ input {
 }
 
 .activites-cards .card-title {
-    margin-top: 25px;
+    margin: 25px 0px 0px 15px;
 }
 
 /****** Début de la section FOOTER ***********/
@@ -378,19 +387,20 @@ footer {
     display:flex;
     flex-direction:row;
     background-color: var(--main-bg-color);
-    margin-top:50px;
+    margin-top:50px 0px 0px 0px;
     width:100%;
 }
 
 footer nav {
     display:flex;
     margin:0px;
-    padding:0px;
+    padding-left:20px;
     width:100%;
 }
 
 footer ul {
     list-style-type: none;
+    padding:0px;
 }
 
 footer li{
