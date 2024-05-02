@@ -218,7 +218,6 @@ input {
     display: flex;
     width: 65%;
     flex-direction:column;
-    justify-content:space-around;
 }
 
 .hebergements .card-txt{
@@ -230,16 +229,19 @@ input {
 .hebergements-cards{
     display:flex;
     flex-wrap: wrap;
-    justify-content:space-evenly;
+    justify-content:space-between;
     margin-top:20px;
-    gap:20px;
+}
+
+.hebergements-cards a{
+    width:32%;
 }
 
 .hebergements-cards .card {
     display: flex;
     flex-direction:column;
-    width:250px;
     height:190px;
+    margin-bottom:20px;
 }
 
 .hebergements-cards img {
@@ -268,9 +270,8 @@ input {
 }
 
 .afficherplus{
-    height:30px;
     margin-left:5px;
-    padding-top:30px;
+    padding-top:10px;
 }
 
 #afficher-plus {
