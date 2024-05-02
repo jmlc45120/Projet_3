@@ -277,7 +277,6 @@ input {
     /* height:10px; */
 }
 
-<<<<<<< HEAD
 .afficher-plus {
     text-decoration:none;
     color: #cf1f1f;
@@ -297,22 +296,6 @@ input {
     background-color:var(--main-bg-color);
     color:blue;
 } */
-=======
-.afficherplus{
-    margin-left:5px;
-    padding-top:10px;
-}
-
-#afficher-plus {
-    font-weight: bold;
-    width:100px;
-}
-
-#afficher-plus:hover{
-    color:blue;
-    font-size:17px;
-}
->>>>>>> 2722a14add893808c448e35d9c728153d7e8d7a9
 
 /********************** Début de section POPULAIRES **************************/
 
