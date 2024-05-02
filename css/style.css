@@ -105,7 +105,13 @@ article p{
 
 .rechercher {
     display:flex;
+<<<<<<< HEAD
+    align-items:center;
+    margin:0px;
+    padding-bottom:40px;
+=======
     padding-bottom:30px;
+>>>>>>> 2722a14add893808c448e35d9c728153d7e8d7a9
 }
 
 .rechercher .fond-icone-map{
@@ -203,7 +209,8 @@ input {
 /****************** Hebergements And Populaires *************************/
 .hebergements-and-populaires {
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-bottom:20px;
 }
 
 .hebergements-and-populaires section {
@@ -253,7 +260,7 @@ input {
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
-    width: 100%;
+    width:100%;
 }
 
 .hebergements-cards .card-title {
@@ -267,8 +274,30 @@ input {
 
 .hebergements-cards .card-rating {
     padding:5px;
+    /* height:10px; */
 }
 
+<<<<<<< HEAD
+.afficher-plus {
+    text-decoration:none;
+    color: #cf1f1f;
+}
+.afficher-plus:hover {
+    cursor: pointer; /* Changer le curseur au survol */
+}
+
+/* .afficher-plus button {
+    border-width: 0px;
+    font-weight: bold;
+    background-color:var(--main-bg-color);
+
+} */
+
+/* .afficher-plus button:hover{
+    background-color:var(--main-bg-color);
+    color:blue;
+} */
+=======
 .afficherplus{
     margin-left:5px;
     padding-top:10px;
@@ -283,6 +312,7 @@ input {
     color:blue;
     font-size:17px;
 }
+>>>>>>> 2722a14add893808c448e35d9c728153d7e8d7a9
 
 /********************** Début de section POPULAIRES **************************/
 
@@ -336,14 +366,21 @@ input {
     display:flex;
     flex-direction:column;
     justify-content: space-between;
-    margin: 25px;
+    margin-bottom: 60px;
 }
 
 .activites-cards{
     display:flex;
     flex-wrap: wrap;
     flex-direction:row;
+<<<<<<< HEAD
+    justify-content: space-around;
+}
+.activites-title {
+    margin-left: 20px;
+=======
     justify-content: space-between;
+>>>>>>> 2722a14add893808c448e35d9c728153d7e8d7a9
 }
 
 .activites-cards .card {
@@ -352,8 +389,13 @@ input {
     margin-top:20px;
     padding:0px;
     border-radius: 20px 20px 20px 20px;
+<<<<<<< HEAD
+    width:300px;
+    height:440px;
+=======
     width:305px;
     height:455px;
+>>>>>>> 2722a14add893808c448e35d9c728153d7e8d7a9
 }
 
 .activites-cards img {
@@ -370,7 +412,11 @@ input {
 }
 
 .activites-cards .card-title {
+<<<<<<< HEAD
+    margin: 25px 0px 0px 15px;
+=======
     margin-top:20px;
+>>>>>>> 2722a14add893808c448e35d9c728153d7e8d7a9
 }
 
 /******************* Début de la section FOOTER ***********************/
@@ -379,25 +425,33 @@ footer {
     display:flex;
     flex-direction:row;
     background-color: var(--main-bg-color);
+<<<<<<< HEAD
+    margin-top:50px 0px 0px 0px;
+=======
     margin:100px 0px 0px 0px;
     padding-left:20px;
+>>>>>>> 2722a14add893808c448e35d9c728153d7e8d7a9
     width:100%;
 }
 
 footer nav {
     display:flex;
     margin:0px;
-    padding:0px;
+    padding-left:20px;
     width:100%;
 }
 
 footer ul {
     list-style-type: none;
+<<<<<<< HEAD
+    padding:0px;
+=======
     padding-left:0px;
 }
 
 footer h3 {
     margin:25px 0px 5px 0px ;
+>>>>>>> 2722a14add893808c448e35d9c728153d7e8d7a9
 }
 
 footer li{
