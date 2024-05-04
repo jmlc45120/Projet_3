@@ -218,7 +218,9 @@ input {
     width: 65%;
     flex-direction:column;
 }
-
+.hebergements-title {
+    margin-bottom:20px;
+}
 .hebergements .card-txt{
     flex-direction:column;
     padding-left:10px;
@@ -228,7 +230,7 @@ input {
     display:flex;
     flex-wrap: wrap;
     justify-content:space-between;
-  
+    gap:20px;
 }
 
 .hebergements-cards a{
@@ -239,7 +241,7 @@ input {
     display: flex;
     flex-direction:column;
     height:190px;
-    margin-top:20px;
+    margin-top:0px;
 }
 
 .hebergements-cards img {
