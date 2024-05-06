@@ -413,6 +413,10 @@ footer li{
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     
+    .rechercher {
+        margin-bottom:10px;
+    }
+
     .filtres {
         display:flex;
         flex-direction: column;
