@@ -433,11 +433,13 @@ footer li{
         width: 100%;
     }
     .hebergements-cards .card-title {
-        font-size: 14px;
+        font-size: 15px;
+        margin-bottom: 10px;
     }
 
     .hebergements-cards .card-subtitle {
         font-size: 13px;
+        margin-bottom: 5px;
     }
 
     .populaires {
