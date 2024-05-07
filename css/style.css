@@ -17,20 +17,28 @@ body {
     justify-content: center;
 }
 
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
 header {
     position:relative;
     display: flex;
     align-items:center;
     height:70px;
 }
+
+header img {
+    width: 60px;
+}
+
 header nav {
     position:absolute;
     right:0px;top:7px;
     height:100%;
-}
-
-header img {
-    width: 60px;
 }
 
 header a {
@@ -42,13 +50,6 @@ header a:hover {
     color: var(--main-color);
     border-top:solid;
     border-width:4px;
-}
-
-.main-container {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
-    box-sizing: border-box;
 }
 
 a {
@@ -79,11 +80,7 @@ a {
     color: var(--main-bg-color)
 }
 
-/************** Début de section Call To Action *******************/
-
-section{
-    flex-direction: row;
-}
+/************** Titre Page *******************/
 
 article h2{
     margin:0px;
@@ -94,6 +91,8 @@ article p{
     margin:0px;
     padding-bottom:30px;
 }
+
+/************** Call To Action *******************/
 
 .call-to-action {
     display:flex;
@@ -211,7 +210,7 @@ input {
     box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
+/********************** Début de section Hebergements ***************************/
 .hebergements {
     width: 65%;
     display: flex;
@@ -244,13 +243,8 @@ input {
 .hebergements-cards .card-content {
     display: flex;
     flex-direction: column;
-    justify-content:flex-start;
     height:45%;
     width: 100%;
-}
-
-.hebergements-cards .card-txt{
-    flex-direction:column;
     padding-left:10px;
 }
 
@@ -263,7 +257,7 @@ input {
 }
 
 .hebergements-cards .card-rating {
-    padding:4px 0px 4px 10px;
+    padding:4px 0px;
 }
 
 .afficherplus{
@@ -336,8 +330,8 @@ input {
 
 .activites-cards{
     display:flex;
-    flex-wrap: wrap;
     flex-direction:row;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -372,13 +366,11 @@ input {
     margin-top:20px;
 }
 
-/******************* Début de la section FOOTER ***********************/
+/*************************** FOOTER *************************************/
 
 footer {
-    display:flex;
-    flex-direction:row;
     background-color: var(--main-bg-color);
-    margin:100px 0px 0px 0px;
+    margin-top:100px;
     padding-left:20px;
     width:100%;
 }
@@ -388,25 +380,25 @@ footer nav {
     width:100%;
 }
 
-footer ul {
-    list-style-type: none;
-    padding-left:0px;
-}
-
-footer h3 {
-    margin:25px 0px 5px 0px ;
-}
-
-footer li{
-    margin-bottom:20px;
-}
-
 .footer-paragraphe {
     display:flex;
     flex-direction:column;
     justify-content:flex-start;
     width:33%;
     height:200px;
+}
+
+footer h3 {
+    margin:25px 0px 5px 0px ;
+}
+
+footer ul {
+    list-style-type: none;
+    padding-left:0px;
+}
+
+footer li{
+    margin-bottom:20px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
