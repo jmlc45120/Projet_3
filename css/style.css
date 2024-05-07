@@ -24,34 +24,6 @@ body {
     box-sizing: border-box;
 }
 
-header {
-    position:relative;
-    display: flex;
-    align-items:center;
-    height:70px;
-}
-
-header img {
-    width: 60px;
-}
-
-header nav {
-    position:absolute;
-    right:0px;top:7px;
-    height:100%;
-}
-
-header a {
-    margin-left: 50px;
-    padding-top: 10px;
-}
-
-header a:hover {
-    color: var(--main-color);
-    border-top:solid;
-    border-width:4px;
-}
-
 a {
     color: inherit;
     text-decoration:none;
@@ -78,6 +50,34 @@ a {
 
 .neutral-star {
     color: var(--main-bg-color)
+}
+/************** HEADER *******************/
+header {
+    position:relative;
+    display: flex;
+    align-items:center;
+    height:70px;
+}
+
+header img {
+    width: 60px;
+}
+
+header nav {
+    position:absolute;
+    right:0px;top:7px;
+    height:100%;
+}
+
+header a {
+    margin-left: 50px;
+    padding-top: 10px;
+}
+
+header a:hover {
+    color: var(--main-color);
+    border-top:solid;
+    border-width:4px;
 }
 
 /************** Titre Page *******************/
