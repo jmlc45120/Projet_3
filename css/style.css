@@ -400,6 +400,10 @@ footer li{
     margin-bottom:20px;
 }
 
+footer li :hover{
+    font-weight: 600;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
